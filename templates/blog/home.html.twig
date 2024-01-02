@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+{% block title %}accueil
+{% endblock %}
+{% block body %}
+
+
+	<h1>{{salutation}}</h1>
+	<h2>
+		Page d'accueil
+	</h2>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime veniam officia illo quia sunt vero ullam pariatur nesciunt suscipit nemo, aperiam porro ut ea quas earum quos at facere nisi, ab aliquam iusto recusandae, voluptatum maiores. Rem repellat quis nihil!
+																																																																																																																																															        Veniam minus pariatur, minima explicabo tempore veritatis, voluptas illo nesciunt rem totam quasi obcaecati aut officia voluptates ipsam perspiciatis tempora distinctio adipisci, libero quibusdam mollitia quis? Maxime quasi dolorem, nihil iusto numquam itaque quisquam temporibus laborum atque modi sunt suscipit!</p>
+	<h2>{{title}}</h2>
+	{% if age >= 18%}
+		<p>Tu es Majeur</p>
+	{% else %}
+		<p>Tu es Mineur</p>
+	{% endif %}
+
+	{% set navar = "<h1>Ceci est un titre</h1>" %}</br>
+{{navar}}</br>{{navar|raw}}<br>{{"now"|date("d/m/Y")}}{% endblock %}
